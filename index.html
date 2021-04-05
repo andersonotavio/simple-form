@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="leftside">
+           <img class="left-img" src="imagen/financial_data.png" alt="foto"> 
+        </div>
+        <div class="rightside">
+            <h1>Create an account</h1>
+            <form action="cadastro.html" method="post" class="validator">
+                <label >
+                    Name: <br>
+                    <input type="text" name="name" data-rules="required|min=2" >
+                </label>
+                <label >
+                    E-mail: <br>
+                    <input type="text" name="email" data-rules="required|email"> 
+                </label>
+                <label >
+                    Password: <br>
+                    <input type="password" name="password" data-rules="required|min=6">
+                </label>
+                <label>
+                    <input class="botao" type="submit" value="Submit" onmouseover="cor()" onmouseout="corA()">
+                </label>
+            </form>
+            <div>
+                Already have an account? Sign in
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
